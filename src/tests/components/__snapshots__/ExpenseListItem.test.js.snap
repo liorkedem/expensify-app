@@ -3,7 +3,6 @@
 exports[`should render ExpenseListItem correctly 1`] = `
 <div>
   <Link
-    replace={false}
     to="/edit/1"
   >
     <h3>
@@ -11,9 +10,9 @@ exports[`should render ExpenseListItem correctly 1`] = `
     </h3>
   </Link>
   <p>
-    195
-     | 
-    0
+    $1.95
+    -
+    January 1st, 1970
   </p>
 </div>
 `;
