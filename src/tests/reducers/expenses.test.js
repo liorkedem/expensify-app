@@ -45,12 +45,10 @@ test('should add an expense', () => {
 test('should edit an expense', () => {
     const action = {
         type: 'EDIT_EXPENSE',
-        id:expenses[0].id,
-        expense: {
-            updates: {
-                id: expenses[0].id,
-                amount: 5
-            }
+        id: expenses[0].id,
+        updates: {
+            id: expenses[0].id,
+            amount: 5
         }
     };
     const state = expensesReducer(expenses, action);
@@ -61,7 +59,7 @@ test('should edit an expense', () => {
 test('should not edit an expense if not exist', () => {
     const action = {
         type: 'EDIT_EXPENSE',
-        id:-1,
+        id: -1,
         expense: {
             updates: {
                 id: expenses[0].id,
